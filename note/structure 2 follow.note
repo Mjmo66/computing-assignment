@@ -1,0 +1,43 @@
+#We can write modules of code using the structure shown in the table and diagram above. 
+
+def get_results():
+    # add code here
+
+def calculate_percentages():
+    # add code here
+
+def find_top():
+    # add code here
+
+def display_top():
+    # add code here
+
+
+#We can identify which subprograms have data passed in and which have data returned (passed out). This has to match the data flow diagrams or tables. 
+
+ 
+def get_results():
+    # Your code here
+	return  pupilName, prelimMark, courseMark
+	
+def calculate_percentages(prelimMark, courseMark):
+    # Your code here
+	return percentages
+	
+def find_top(percentage):
+    # Your code here
+	return topPosition
+	
+
+def display_top(topPosition, pupilName, percentage):
+    # Your code here
+
+#And we can call these functions by writing this code in a special function called main that helps us spot if any variables are global. Notice how the values that are passed out or returned are assigned to variables in the main function.
+
+def main():
+	pupilName, prelimMark, courseMark = get_results()
+	percentage = calculate_percentages(prelimMark, courseMark)
+	topPosition = find_top(percentage)
+	display_top(pupilName, percentage, topPosition)
+
+main()
