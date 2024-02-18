@@ -1,0 +1,13 @@
+def display(max_j,):
+    for i in range (30):
+       print (max_j)
+
+
+def main():
+   entry_id,location,forname,surname,jumps = rfile()
+   bib(entry_id,location,forname,surname)
+   max_j = max_jumps(athlethes)
+   display (max_j)
+
+
+main()
